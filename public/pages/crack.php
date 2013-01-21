@@ -35,7 +35,7 @@
     if(isset($res_string) && $res_string != -1){
 
         # Update statistics
-        $info_totalhashes++;
+        $info_totalcracks++;
 ?>
                     <footer>
                         <p>Result: <strong><?=$res_string?></strong></p>
