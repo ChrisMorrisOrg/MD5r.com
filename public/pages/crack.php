@@ -24,11 +24,10 @@
                         <p>Enter the MD5 hash below, and we'll try to crack it!</p>
                     </header>
                     <section>
-                        <h2>Crack:</h2>
                         <p>
                             <form name="crack" action="<?=$_SERVER['REQUEST_URI'];?>" method="post">
                                 <input name="string" type="text">
-                                <input type="submit" value="Hash!">
+                                <input type="submit" value="Crack!">
                             </form>
                         </p>
                     </section>

@@ -30,7 +30,6 @@
                         <p>Enter the content below that you want to hash using the MD5 algorithm.</p>
                     </header>
                     <section>
-                        <h2>Hash:</h2>
                         <p>
                             <form name="hash" action="<?=$_SERVER['REQUEST_URI'];?>" method="post">
                                 <input name="string" type="text">
