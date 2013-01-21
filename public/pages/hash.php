@@ -1,7 +1,7 @@
 <?php
     if(isset($_POST['string'])){
         $string = $_POST['string'];
-        $string = substr($string, 1000);
+        $string = substr($string, 0, 1000);
         $hash = md5($string);
 
         $stmt = $dbc->prepare("SELECT COUNT(*), dict_string, dict_hash FROM dictionary WHERE dict_string = ?");
