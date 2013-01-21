@@ -1,7 +1,7 @@
                 <article>
                     <header>
                         <h1>Welcome to MD5r.com!</h1>
-                        <p>MD5r.com is a simple, free, open-source tool allowing you to hash (not to be confused with encrypt) content using the <a href="http://en.wikipedia.org/wiki/MD5" target="_blank">MD5 hasing algorithm</a>.
+                        <p>MD5r.com is a simple, free, open-source tool which allows you to hash content using the <a href="http://en.wikipedia.org/wiki/MD5" target="_blank">MD5 hashing algorithm</a>. Please note that hashing is not the same as encryption, you can find out more <a href="http://en.wikipedia.org/wiki/Hash_function" target="_blank">here</a>.
                     </header>
                     <section>
                         <h2>Get Cracking!</h2>
