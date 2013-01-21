@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).load(function(){
     # If there's a text input available, focus on it.
     $("input:text").focus();
 });
