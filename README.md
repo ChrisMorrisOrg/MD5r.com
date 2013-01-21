@@ -12,6 +12,7 @@ Known Issues
 ------------
 - The dictionary generator may skip certain words.
 - Collisions may not crack correctly.
+- Non-case-sensitive
 
 Version History
 ---------------
