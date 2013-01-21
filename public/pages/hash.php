@@ -1,6 +1,7 @@
 <?php
     if(isset($_POST['string'])){
         $string = $_POST['string'];
+        # Force 1000-chars or less
         $string = substr($string, 0, 1000);
         $hash = md5($string);
 
@@ -22,7 +23,13 @@
             $stmt->bind_param("ss", $res_string, $res_hash);
             $stmt->execute();
             $stmt->close();
+
+            # Update statistics
+            $info_totalrelations++;
         }
+
+        # Update statistics
+        $info_totalhashes++;
     }
 ?>
                 <article>

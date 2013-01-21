@@ -33,6 +33,9 @@
                     </section>
 <?php
     if(isset($res_string) && $res_string != -1){
+
+        # Update statistics
+        $info_totalhashes++;
 ?>
                     <footer>
                         <p>Result: <strong><?=$res_string?></strong></p>
