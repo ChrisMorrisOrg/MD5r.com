@@ -1,6 +1,7 @@
 <?php
     if(isset($_POST['string'])){
         $string = $_POST['string'];
+        $string = substr($string, 1000);
         $hash = md5($string);
 
         $stmt = $dbc->prepare("SELECT COUNT(*), dict_string, dict_hash FROM dictionary WHERE dict_string = ?");
@@ -32,7 +33,7 @@
                     <section>
                         <p>
                             <form name="hash" action="<?=$_SERVER['REQUEST_URI'];?>" method="post">
-                                <input name="string" type="text">
+                                <input name="string" type="text" maxlength="1000">
                                 <input type="submit" value="Hash!">
                             </form>
                         </p>
