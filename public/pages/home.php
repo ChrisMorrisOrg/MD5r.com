@@ -1,15 +1,15 @@
                 <article>
                     <header>
                         <h1>Welcome to MD5r.com!</h1>
-                        <p>MD5r.com is a simple, free, open-source tool allowing you to hash (not to be confused with encrypt) content using the <a href="http://en.wikipedia.org/wiki/MD5" target="_blank">MD5 hasing algorithm</a>. You can$
+                        <p>MD5r.com is a simple, free, open-source tool allowing you to hash (not to be confused with encrypt) content using the <a href="http://en.wikipedia.org/wiki/MD5" target="_blank">MD5 hasing algorithm</a>.
                     </header>
                     <section>
                         <h2>Get Cracking!</h2>
-                        <p>If you want to crack MD5-hashed content, jump over to the crack tab.</p>
+                        <p>If you want to crack MD5-hashed content, jump over to the <a href="/crack/">crack</a> tab.</p>
                     </section>
                     <section>
                         <h2>Get Hashing!</h2>
-                        <p>If you want to hash something, jump over to the hash tab.</p>
+                        <p>If you want to hash something, jump over to the <a href="/hash/">hash</a> tab.</p>
                     </section>
                     <footer>
                         <h3>Looking for SHA1?</h3>

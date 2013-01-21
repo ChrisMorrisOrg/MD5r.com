@@ -5,7 +5,7 @@
                     </header>
                     <section>
                         <h2>Get the Code!</h2>
-                        <p>If you're a developer or just want to check out the code of this website, you can download a copy via GitHub. Feel free to pull, modify, and improve at will. Send me pull requests too, if you like.</p>
+                        <p>If you're a developer or just want to check out the code of this website, you can download a copy via <a href="https://github.com/ChrisMorrisOrg/MD5r.com/">GitHub</a>. Feel free to pull, modify, and improve at will. Send me pull requests too, if you like.</p>
                     </section>
                     <section>
                         <h2>How it Works...</h2>
