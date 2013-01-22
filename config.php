@@ -1,4 +1,5 @@
 <?php
+# 9f715b74bcec9ddeac5e00752225be81
 # Database settings
 
 define('DB_NAME', 'DATABASE_NAME');

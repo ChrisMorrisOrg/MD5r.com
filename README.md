@@ -18,7 +18,7 @@ Version History
 ---------------
 ### v2.0.006 (2013-Jan-21)
 - Updated schema.
-- Allows for upto 1000-char long input for hashing.
+- Allows for up to 1000-char long input for hashing.
 - Fix for hashing inputs larger than 255-chars which would map the first 255-chars to the hash for the 256+ char string.
 
 ### v2.0.001 (2013-Jan-21)
