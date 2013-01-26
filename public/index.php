@@ -55,7 +55,7 @@
 
                 <aside>
                     <h3>Statistics</h3>
-                    <p>As of <?=date("F jS, Y @ g:i:s a");?>:</p>
+                    <p>As of <?=date("F jS, Y @ G:i:s");?>:</p>
                     <p>
                         <ul>
                             <li>Hashes: <?=$info_totalhashes;?></li>
