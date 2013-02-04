@@ -1,8 +1,6 @@
 <?php
     if(isset($_POST['string'])){
         $string = $_POST['string'];
-        # Force 1000-chars or less
-        $string = substr($string, 0, 1000);
         $hash = md5($string);
 
         $stmt = $dbc->prepare("SELECT COUNT(*), dict_string, dict_hash FROM dictionary WHERE dict_string = ?");
@@ -17,7 +15,7 @@
                 printf("Error: %s\n", $dbc->error);
         }else{
             $res_string = $string;
-            $res_hash = md5($string);
+            $res_hash = $hash;
 
             $stmt = $dbc->prepare("INSERT INTO dictionary VALUES (?, ?, NOW(), 1, 0);");
             $stmt->bind_param("ss", $res_string, $res_hash);
@@ -40,7 +38,7 @@
                     <section>
                         <p>
                             <form name="hash" action="<?=$_SERVER['REQUEST_URI'];?>" method="post">
-                                <input name="string" type="text" maxlength="1000">
+                                <textarea name="string"></textarea>
                                 <input type="submit" value="Hash!">
                             </form>
                         </p>

@@ -10,12 +10,17 @@ I originally made this site back in 2008, but I've revamped it a bit and setup a
 
 Known Issues
 ------------
-- The dictionary generator may skip certain words.
 - Collisions may not crack correctly.
-- Non-case-sensitive
 
 Version History
 ---------------
+### v2.1.000 (2013-Feb-04)
+- Updated schema allows for large text blocks to be hashed.
+- Case-sensitivity bug fixed.
+- Generator no longer skips certain words, due to schema fix.
+- 1000-char limit removed.
+- Hash input element is now a large textarea.
+
 ### v2.0.006 (2013-Jan-21)
 - Updated schema.
 - Allows for up to 1000-char long input for hashing.
