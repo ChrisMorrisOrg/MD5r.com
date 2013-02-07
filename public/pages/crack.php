@@ -38,7 +38,7 @@
         $info_totalcracks++;
 ?>
                     <footer>
-                        <p>Result: <strong><?=$res_string?></strong></p>
+                        <p>Result: <strong><?=nl2br($res_string);?></strong></p>
                     </footer>
 <?php }elseif($res_string == -1){ ?>
                     <footer>
