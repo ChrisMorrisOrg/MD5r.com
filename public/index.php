@@ -1,5 +1,4 @@
 <?php
-    ini_set('error_reporting', E_ALL);
     require("../config.php");
 
     $_req = "home";
@@ -57,12 +56,14 @@
                     <h3>Statistics</h3>
                     <p>As of <?=date("F jS, Y @ G:i:s");?>:</p>
                     <p>
-                        <ul>
-                            <li>Hashes: <?=$info_totalhashes;?></li>
-                            <li>Cracks: <?=$info_totalcracks;?></li>
-                            <li>Dictionary: <?=$info_totalrelations;?> relations</li>
-                            <li>UNIX Timestamp: <?=time();?></li>
-                        </ul>
+                        <div id="statistics">
+                            <ul>
+                                <li>Hashes: <?=$info_totalhashes;?></li>
+                                <li>Cracks: <?=$info_totalcracks;?></li>
+                                <li>Dictionary: <?=$info_totalrelations;?> relations</li>
+                                <li>UNIX Timestamp: <?=time();?></li>
+                            </ul>
+                        </div>
                     </p>
                 </aside>
 

@@ -1,4 +1,7 @@
 <?php
+    header('Content-type: application/json');
+    require("../../config.php");
+
     if(isset($_POST['string'])){
         $string = $_POST['string'];
         $hash = md5($string);
@@ -30,28 +33,7 @@
         $info_totalhashes++;
     }
 ?>
-                <article>
-                    <header>
-                        <h1>MD5 Hasher</h1>
-                        <p>Enter the content below that you want to hash using the MD5 algorithm.</p>
-                    </header>
-                    <section>
-                        <p>
-                            <form name="hash" action="<?=$_SERVER['REQUEST_URI'];?>" method="post">
-                                <textarea name="string"></textarea>
-                                <input type="submit" value="Hash!">
-                            </form>
-                        </p>
-                    </section>
-<?php
-    if(isset($res_hash)){
-?>
-                    <footer>
-                        <p>Result: <strong><div id="result"><?=$res_hash?></div></strong></p>
-                    </footer>
-<?php }else{ ?>
-                    <footer>
-                        <p>Result: <strong><div id="result"></div></strong></p>
-                    </footer>
-<?php } ?>
-                </article>
+{
+    "statistics": "<ul><li>Hashes: <?=$info_totalhashes;?></li><li>Cracks: <?=$info_totalcracks;?></li><li>Dictionary: <?=$info_totalrelations;?> relations</li><li>UNIX Timestamp: <?=time();?></li></ul>",
+    "hash": "<?=$res_hash;?>"
+}
