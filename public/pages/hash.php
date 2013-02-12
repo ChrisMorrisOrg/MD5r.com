@@ -47,11 +47,11 @@
     if(isset($res_hash)){
 ?>
                     <footer>
-                        <p>Result: <strong><div id="result"><?=$res_hash?></div></strong></p>
+                        <p><strong>Result:</strong> <div id="result"><?=$res_hash?></div></p>
                     </footer>
 <?php }else{ ?>
                     <footer>
-                        <p>Result: <strong><div id="result"></div></strong></p>
+                        <p><strong>Result:</strong> <div id="result"></div></p>
                     </footer>
 <?php } ?>
                 </article>

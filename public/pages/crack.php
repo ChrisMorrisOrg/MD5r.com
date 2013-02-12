@@ -38,11 +38,11 @@
         $info_totalcracks++;
 ?>
                     <footer>
-                        <p>Result: <strong><?=nl2br($res_string);?></strong></p>
+                        <p><strong>Result:</strong> <?=nl2br($res_string);?></p>
                     </footer>
 <?php }elseif($res_string == -1){ ?>
                     <footer>
-                        <p>Sorry, not found.</p>
+                        <p><strong>Sorry, not found.</strong></p>
                     </footer>
 <?php } ?>
                 </article>
